@@ -1,0 +1,334 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  display: flex;
+  height: 10vh;
+  box-shadow: 5px 5px 5px green;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation img {
+  width: 100%;
+  height: 10vh;
+}
+
+.navigation-logged-in {
+ display: flex;
+ justify-content: flex-start;
+ height: 3.5vh;
+ margin-right: 5vw;
+}
+
+.navigation-logged-in button {
+  width: 10%;
+  border: 1px solid green;
+  font-weight: bold
+}
+
+.navigation-logged-in .links {
+  margin-left: 1vw;
+}
+
+.navigation-logged-in span {
+  margin-right: 5vw;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+}
+
+
+.links a, li{
+  display: flex;
+  margin-right: 10vw;
+  text-decoration: none;
+  list-style-type: none;
+  margin-right: 3vw;
+}
+
+
+.quizPage {
+  width: 50%;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.getQButton {
+  font-size: 1rem;
+  padding: 1%;
+  margin-bottom: 2vh;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.question {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 3vh;
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.endGame {
+  font-size: 1rem;
+  padding: 1%;
+}
+
+
+.score {
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.questionNumber, .category {
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.answerBlock {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.answer {
+  height: 3vh;
+  margin-right: 1.5vw;
+  font-size: 1rem;
+  margin-bottom: 2vh;
+}
+
+.create-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.create-title {
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
+  width: 50%;
+}
+
+.create-item {
+ margin-top: 3vh;
+ height: 3vh;
+}
+
+.create-btn {
+  margin-top: 3vh;
+  height: 3vh;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+ #hidden {
+  display: none;
+ }
+
+ #displayCorrect {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+ }
+
+#displayNext {
+  font-size: 1rem;
+  padding: 1%;
+  background-color: #51DB2C;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1vh;
+}
+
+#displayEnd {
+  font-size: 1rem;
+  padding: 1%;
+  margin-top: 2%;
+  background-color: #F52424;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#displayStart {
+  font-size: 1rem;
+  padding: 1%;
+}
+
+#correct {
+  font-size: 2rem;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+.statsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.statsContainer h1 {
+  margin-bottom: 3%;
+}
+
+.statsContainer h3 {
+  margin-bottom: 3%;
+}
+
+.statsContainer button {
+  font-size: 1.25rem;
+  padding: 1%;
+}
+
+.delete-btn {
+  font-size: 1rem;
+  padding: 1%;
+  margin-top: -1%;
+}
+
+.home-container {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-container h1 {
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+.home-container h3 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.home-container p {
+  line-height: 2rem;
+}
+
+.score-table-header {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7.5%;
+}
+
+.score-table {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table-myScore {
+  width: 25%;
+  font-size: 1.25rem;
+  height: 4.25vh;
+}
+
+.table-score-out-of {
+  width: 25%;
+  font-size: 1.25rem;
+}
+
+.table-when {
+  font-size: 1.25rem;
+  width: 25%;
+}
+
+.table-delete {
+  width: 25%;
+  font-size: 1.25rem;
+}
+
+.table-delete button {
+ background-color: #F52424;
+ padding: 3%;
+}
+
+th, td  {
+  border: 1px solid black;
+}
+
+footer { 
+  text-align: center;
+  height: 8vh;
+  box-shadow: 0 -5px 5px green;
+  margin-top: 30%;
+}
+
+footer h3 {
+  padding-bottom: 1vh;
+}
+
+footer span {
+  font-style: italic;
+}
+
+footer img {
+  width: 20%;
+  height: 7vh;
+  margin-top: 1vh;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.login-container h3, input {
+  margin-bottom: 5%;
+}
+
+.login-container button{
+  margin-top: 5%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.signup-container h3, input {
+  margin-bottom: 5%;
+}
+
+.signup-container button{
+  margin-top: 5%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
