@@ -20,7 +20,8 @@ if (questionNum > 1) {
 }
 
 
-const handleSubmit = async () => {
+const handleSubmit = async (event) => {
+    event.preventDefault();
     if (!user) {
         setError('You must be logged in')
         return
@@ -44,7 +45,7 @@ const handleSubmit = async () => {
     if(response.ok) {
         setError(null)
         dispatch({type: 'CREATE_SCORE', payload: json})
-        navigate('/quizzes', {replace: true})
+        navigate('/', {replace: true})
     }
 }
 
