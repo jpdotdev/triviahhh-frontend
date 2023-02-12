@@ -44,7 +44,7 @@ const handleSubmit = async () => {
     if(response.ok) {
         setError(null)
         dispatch({type: 'CREATE_SCORE', payload: json})
-        navigate('/', {replace: true})
+        navigate('/quizzes', {replace: true})
     }
 }
 
