@@ -10,7 +10,7 @@ const Scores = () => {
 
     React.useEffect(() => {
      const fetchScores = async () => {
-        const response = await fetch('/scores/', {
+        const response = await fetch('https://triviahhh-backend.onrender.com/scores/', {
           headers: {'Authorization': `Bearer ${user.token}`},
         })
         const json = await response.json()
