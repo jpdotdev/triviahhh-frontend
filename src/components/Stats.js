@@ -20,7 +20,7 @@ if (questionNum > 1) {
 }
 
 
-const handleSubmit = async () => {
+const handleSubmit = async (e) => {
     if (!user) {
         setError('You must be logged in')
         return
@@ -42,6 +42,7 @@ const handleSubmit = async () => {
         setError(json.error)
     } 
     if(response.ok) {
+        e.preventDefault()
         setError(null)
         dispatch({type: 'CREATE_SCORE', payload: json})
         navigate('/')
