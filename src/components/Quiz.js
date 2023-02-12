@@ -51,7 +51,7 @@ export default function Quiz() {
         return result.replace(/(&quot;)/g, "\"").replace(/(&rsquo;)/g, "\"").replace(/(&#039;)/g, "'").replace(/(&amp;)/g, "\"")
         .replace(/(&eacute;)/g).replace(/(&ldquo;)/g,'"').replace(/(&rdquo;)/g,'"').replace(/(&Aacute;)/g,'Á')
         .replace(/(&oacute;)/g,'ó').replace(/(&Oacute;)/g,'Ó').replace(/(&aacute;)/g,'á').replace(/(&aring;)/g,'å').replace(/(&ouml;)/g,'ö')
-        .replace(/(&auml;)/g,'ä').replace(/(&Auml;)/g,'Ä').replace(/(&Ouml;)/g,'Ö')
+        .replace(/(&auml;)/g,'ä').replace(/(&Auml;)/g,'Ä').replace(/(&Ouml;)/g,'Ö').replace(/\u00AD/g, '');
     }
 
     // function to verify if the button click is the correct answer or not, then loads next quiz question
