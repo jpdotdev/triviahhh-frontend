@@ -2,11 +2,13 @@ import React from 'react'
 import "../App.css"
 import { useScoresContext } from "../hooks/useScoresContext"
 import { useAuthContext } from '../hooks/useAuthContext'
+import { useNavigate } from 'react-router-dom'
 
 export default function Stats({score, questionNum}) {
 
 const { dispatch } = useScoresContext()
 const { user } = useAuthContext()
+const navigate = useNavigate();
 
 const [error, setError] = React.useState(null)
 let total;
@@ -42,6 +44,7 @@ const handleSubmit = async () => {
     if(response.ok) {
         setError(null)
         dispatch({type: 'CREATE_SCORE', payload: json})
+        navigate('/')
     }
 }
 
