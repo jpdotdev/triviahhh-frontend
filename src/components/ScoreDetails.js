@@ -12,7 +12,7 @@ const ScoreDetails = ({ score }) => {
       return
     }
 
-    const response = await fetch('/scores/' + score._id, {
+    const response = await fetch('https://triviahhh-backend.onrender.com/scores/' + score._id, {
       method: 'DELETE',
       headers: {
         'Authorization': `Bearer ${user.token}`

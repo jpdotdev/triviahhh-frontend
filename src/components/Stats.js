@@ -26,7 +26,7 @@ const handleSubmit = async () => {
 
     const scores = { score, total }
 
-    const response = await fetch('/scores', {
+    const response = await fetch('https://triviahhh-backend.onrender.com/scores', {
         method: 'POST',
         body: JSON.stringify(scores),
         headers: {
